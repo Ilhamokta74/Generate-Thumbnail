@@ -44,7 +44,7 @@ function extractLastFrame(inputPath, outputPath) {
       "-y", // timpa file output jika sudah ada
       "-sseof", `-${SEEK_FROM_END}`, // mundur X detik dari akhir file
       "-i", inputPath,
-      "-vsync", "0",
+      "-fps_mode", "passthrough",
       "-q:v", "2", // kualitas tinggi
       "-update", "1", // output 1 gambar saja
       "-frames:v", "1",
